@@ -1,0 +1,56 @@
+.lb_size {
+  width: 80px;
+}
+/* .box {
+  border: 1000px;
+  margin: 10px;
+  padding: 1000px;
+  box-sizing: border-box;
+} */
+.make-container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.light-container {
+  width: 80px;
+  height: 80px;
+}
+
+.light-bulb {
+  width: 100%;
+  height: 100%;
+}
+
+/* .border1 {
+  justify-content: center;
+} */
+/* .light_size {
+  flex: auto;
+  justify-content: end;
+  width: 100%;
+  height: 100%;
+} */
+/* body {
+  background-color: teal;
+  border: 1px solid red;
+  padding: 1px;
+  margin: 10px;
+}
+.p_box {
+  border: 1px solid red;
+  padding: 10px;
+  margin: 10px;
+  height: 300px;
+  width: 300px;
+  overflow-y: scroll;
+}
+.flex_container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: fit-content;
+} */
