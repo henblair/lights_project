@@ -1,38 +1,123 @@
-.make-container {
-  width: 100%;
-  margin-right: auto;
-  margin-left: auto;
-}
+/* .box {
+  border: 1000px;
+  margin: 10px;
+  padding: 1000px;
+  box-sizing: border-box;
+} */
 
 .light-container {
   margin: 10px;
-  width: 80px;
-  height: 80px;
-  padding: 50px;
+  position: relative;
+  display: flex;
+  justify-content: center;
 }
 
 .light-bulb {
-  width: 100%;
-  height: 100%;
   border-radius: 50%;
-  border: 4px solid gold;
+  border: 4px solid white;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
+  justify-content: center;
+
   margin: 40px;
-  filter: drop-shadow(22px 10px 22px gold);
+  filter: drop-shadow(20px 5px 22px gold);
 }
 section {
   display: flex;
   flex-wrap: wrap;
-  height: 300px;
-  width: 300px;
-  margin-left: 40%;
+  height: 100%;
+  width: 100%;
+  padding-bottom: 200px;
+  padding-left: 1%;
 }
+section > * {
+  flex: 1 0 25%;
+}
+
 * {
   box-sizing: border-box;
 }
 main {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
   background-image: url("../resources/background.jpeg");
 }
+.bg-container {
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 576px) {
+  section {
+    height: 250px;
+    width: 250px;
+  }
+
+  .light-container {
+    height: 50px;
+    width: 50px;
+  }
+
+  .light-bulb {
+    padding-top: 0%;
+    font-size: 50px;
+    border: 1px solid blue;
+    border-radius: 50%;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 577px) {
+  section {
+    height: 300px;
+    width: 300px;
+  }
+
+  .light-container {
+    height: 80px;
+    width: 80px;
+  }
+
+  .light-bulb {
+    padding-top: 0%;
+    font-size: 80px;
+    border: 2px solid teal;
+    border-radius: 50%;
+  }
+}
+
+@media (max-width: 992px) and (min-width: 769px) {
+  section {
+    height: 600px;
+    width: 600px;
+  }
+
+  .light-container {
+    height: 150px;
+    width: 150px;
+  }
+
+  .light-bulb {
+    font-size: 150px;
+    border: 3px solid red;
+    border-radius: 50%;
+  }
+}
+
+@media (min-width: 993px) {
+  .light-container {
+    height: 200px;
+    width: 200px;
+  }
+
+  .light-bulb {
+    font-size: 200px;
+    border: 4px solid pink;
+    border-radius: 50%;
+  }
+}
+
 /* .border1 {
   justify-content: center;
 } */
